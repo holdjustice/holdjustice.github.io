@@ -58,3 +58,51 @@ nav ul li a:hover, .dropdown:hover .dropbtn {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Existing styles */
+
+/* Policy Grid Styles */
+.policy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.policy-item {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Dark text color for readability */
+}
+
+.policy-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.policy-item p {
+    margin-top: 8px;
+    font-size: 0.9em; /* Adjust the font size as needed */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 600px) {
+    .policy-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
+/* Color Theme: Nature-inspired */
+body {
+    background-color: #f2f2f2; /* Soft background color */
+    color: #333; /* Primary text color */
+}
+
+h1 {
+    color: #4e944f; /* Earthy green, like foliage */
+}
+
+nav {
+    /* Add styles for your navigation bar here, perhaps in shades of blue for water */
+}
+
