@@ -1,3 +1,54 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* or any font-family you prefer */
+    margin: 0;
+    padding: 0;
+}
+
+/* Grid container styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* This creates a responsive grid */
+    gap: 20px; /* Adjust the gap between grid items */
+    padding: 20px;
+}
+
+/* Grid item styling */
+.grid-item {
+    background-color: #f9f9f9; /* Light grey background for each item */
+    border-radius: 8px; /* Optional: rounds the corners of the grid items */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow to each item */
+    overflow: hidden; /* Ensures the content fits within the borders */
+    text-align: center; /* Centers the text inside the grid item */
+}
+
+.grid-item img {
+    width: 100%; /* Makes image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #eee; /* Optional: adds a subtle line between the image and the text */
+}
+
+.grid-item h3 {
+    margin: 0.5em 0; /* Adjusts spacing around the heading */
+}
+
+.grid-item p {
+    padding: 0 1em 1em; /* Adds padding around the paragraph for better readability */
+    margin: 0; /* Removes default margin */
+}
+
+nav {
+    /* Add your navigation bar styles here */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusts grid for smaller screens */
+    }
+}
+
+
 /* Style the navigation bar with nature-inspired colors */
 nav ul {
     list-style-type: none;
